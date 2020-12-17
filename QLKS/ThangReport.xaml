@@ -1,0 +1,24 @@
+﻿<Window x:Class="QLKS.ThangReport"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QLKS"
+        xmlns:Viewer="clr-namespace:SAPBusinessObjects.WPF.Viewer;assembly=SAPBusinessObjects.WPF.Viewer" 
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        mc:Ignorable="d"
+        Title="Báo cáo doanh thu tháng" Height="450" Width="800"
+        DataContext="{StaticResource BaoCaoThangVM}" WindowStartupLocation="CenterScreen" WindowState="Maximized">
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
+            <i:InvokeCommandAction Command="{Binding LoadReportCommand}"
+                                   CommandParameter="{Binding ElementName=ThangRV}">
+            </i:InvokeCommandAction>
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+    <Grid>
+
+        <Viewer:CrystalReportsViewer Name="ThangRV"/>
+
+    </Grid>
+</Window>

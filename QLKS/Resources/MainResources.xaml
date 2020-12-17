@@ -1,0 +1,24 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:QLKS.Resources"
+                    xmlns:viewmodel="clr-namespace:QLKS.ViewModel">
+    <viewmodel:MainViewModel x:Key="MainVM"></viewmodel:MainViewModel>
+    <viewmodel:MatHangViewModel x:Key="MatHangVM"></viewmodel:MatHangViewModel>
+    <viewmodel:NhanVienViewModel x:Key="NhanVienVM"></viewmodel:NhanVienViewModel>
+    <viewmodel:KhachHangViewModel x:Key="KhachHangVM"></viewmodel:KhachHangViewModel>
+    <viewmodel:PhongViewModel x:Key="PhongVM"></viewmodel:PhongViewModel>
+    <viewmodel:LoaiPhongViewModel x:Key="LoaiPhongVM"></viewmodel:LoaiPhongViewModel>
+    <viewmodel:LoaiGiatUiViewModel x:Key="LoaiGiatUiVM"></viewmodel:LoaiGiatUiViewModel>
+    <viewmodel:DangNhapViewModel x:Key="DangNhapVM"></viewmodel:DangNhapViewModel>
+    <viewmodel:LuotGiatUiViewModel x:Key="LuotGiatUiVM"></viewmodel:LuotGiatUiViewModel>
+    <viewmodel:DiChuyenViewModel x:Key="DiChuyenVM"></viewmodel:DiChuyenViewModel>
+    <viewmodel:BaoCaoDichVuViewModel x:Key="BaoCaoDichVuVM"></viewmodel:BaoCaoDichVuViewModel>
+    <viewmodel:BaoCaoNamViewModel x:Key="BaoCaoNamVM"></viewmodel:BaoCaoNamViewModel>
+    <viewmodel:BaoCaoThangViewModel x:Key="BaoCaoThangVM"></viewmodel:BaoCaoThangViewModel>
+    <viewmodel:BaoCaoKhachHangViewModel x:Key="BaoCaoKhachHangVM"></viewmodel:BaoCaoKhachHangViewModel>
+    <viewmodel:HoaDonViewModel x:Key="HoaDonVM"></viewmodel:HoaDonViewModel>
+    <viewmodel:HoaDonLuuTruViewModel x:Key="HoaDonLuuTruVM"></viewmodel:HoaDonLuuTruViewModel>
+    <viewmodel:HoaDonAnUongViewModel x:Key="HoaDonAnUongVM"></viewmodel:HoaDonAnUongViewModel>
+    <viewmodel:HoaDonGiatUiViewModel x:Key="HoaDonGiatUiVM"></viewmodel:HoaDonGiatUiViewModel>
+    <viewmodel:HoaDonDiChuyenViewModel x:Key="HoaDonDiChuyenVM"></viewmodel:HoaDonDiChuyenViewModel>
+</ResourceDictionary>

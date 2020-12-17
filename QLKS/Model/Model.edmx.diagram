@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6bf36337771b444a92b34745f621450a" Name="Diagram1">
+        <EntityTypeShape EntityType="QLKS_IS201Model.BAOCAODICHVU" Width="1.5" PointX="0.75" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLKS_IS201Model.BAOCAONAM" Width="1.5" PointX="9.75" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLKS_IS201Model.CHITIET_HDAU" Width="1.5" PointX="7.5" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLKS_IS201Model.CHITIET_HDDC" Width="1.5" PointX="7.5" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLKS_IS201Model.CHITIET_HDGU" Width="1.5" PointX="7.5" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLKS_IS201Model.CHITIET_HDLT" Width="1.5" PointX="10.5" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLKS_IS201Model.CHUYENDI" Width="1.5" PointX="5.25" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLKS_IS201Model.HOADON" Width="1.5" PointX="5.25" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLKS_IS201Model.KHACHHANG" Width="1.5" PointX="3" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLKS_IS201Model.LOAIGIATUI" Width="1.5" PointX="3" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLKS_IS201Model.LOAIPHONG" Width="1.5" PointX="6" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLKS_IS201Model.LUOTGIATUI" Width="1.5" PointX="5.25" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLKS_IS201Model.MATHANG" Width="1.5" PointX="5.25" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLKS_IS201Model.NHANVIEN" Width="1.5" PointX="3" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLKS_IS201Model.PHONG" Width="1.5" PointX="8.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLKS_IS201Model.TAIKHOAN" Width="1.5" PointX="0.75" PointY="7.875" IsExpanded="true" />
+        <AssociationConnector Association="QLKS_IS201Model.FK_CHITIET__CHITIET_H_MATHANG" ManuallyRouted="false" />
+        <AssociationConnector Association="QLKS_IS201Model.FK_CHITIET_HDAU_HOADON" ManuallyRouted="false" />
+        <AssociationConnector Association="QLKS_IS201Model.FK_CHITIET__CHITIET_H_CHUYENDI" ManuallyRouted="false" />
+        <AssociationConnector Association="QLKS_IS201Model.FK_CHITIET_HDDC_HOADON" ManuallyRouted="false" />
+        <AssociationConnector Association="QLKS_IS201Model.FK_CHITIET__CHITIET_H_LUOTGIAT" ManuallyRouted="false" />
+        <AssociationConnector Association="QLKS_IS201Model.FK_CHITIET_HDGU_HOADON" ManuallyRouted="false" />
+        <AssociationConnector Association="QLKS_IS201Model.FK_CHITIET__CHITIET_H_PHONG" ManuallyRouted="false" />
+        <AssociationConnector Association="QLKS_IS201Model.FK_CHITIET_HDLT_HOADON" ManuallyRouted="false" />
+        <AssociationConnector Association="QLKS_IS201Model.FK_HOADON_CO_HD_KHACHHAN" ManuallyRouted="false" />
+        <AssociationConnector Association="QLKS_IS201Model.FK_HOADON_LAP_HD_NHANVIEN" ManuallyRouted="false" />
+        <AssociationConnector Association="QLKS_IS201Model.FK_LUOTGIAT_CO_LOAIGU_LOAIGIAT" ManuallyRouted="false" />
+        <AssociationConnector Association="QLKS_IS201Model.FK_PHONG_CO_LP_LOAIPHON" ManuallyRouted="false" />
+        <AssociationConnector Association="QLKS_IS201Model.FK_NHANVIEN_CO_TK_TAIKHOAN" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,46 @@
+﻿<Window x:Class="QLKS.DangNhap"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:QLKS"
+        mc:Ignorable="d"
+        Name="dangNhap" Title="Đăng nhập" Height="700" Width="1000" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize" DataContext="{StaticResource DangNhapVM}">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Resources/Icons/bg3.jpg"></ImageBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid Margin="30" Grid.Column="1" Height="600" Background="#99FFFFFF">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1.3*"></RowDefinition>
+                <RowDefinition Height="0.7*"></RowDefinition>
+                <RowDefinition Height="1.8*"></RowDefinition>
+                <RowDefinition Height="0.7*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Image Margin="5,30,5,10" Source="Resources/Icons/appiconpng.png" Grid.Row="0"></Image>
+            <Label Content="ĐĂNG NHẬP" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" Foreground="#FF494163" FontFamily="Segoe UI Semibold"/>
+            <materialDesign:Card Margin="10" materialDesign:ShadowAssist.ShadowDepth="Depth2" VerticalAlignment="Center" Grid.Row="2">
+                <StackPanel Margin="20" >
+                    <TextBox Margin="0,0,0,20" Name="tboxUserName" materialDesign:HintAssist.Hint="Tên đăng nhập" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Text="{Binding TenDangNhap}" VerticalContentAlignment="Center" BorderBrush="#FFD6D6D6" Background="{x:Null}" SelectionBrush="#FF0078D7" FontSize="14" Foreground="#FF787878"/>
+                    <PasswordBox Margin="0,0,0,20" Name="pbxMatKhau" materialDesign:HintAssist.Hint="Mật khẩu" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" VerticalContentAlignment="Center" BorderBrush="#FFD6D6D6" Background="{x:Null}" SelectionBrush="#FF0078D7" FontSize="14" Foreground="#FF787878">
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="PasswordChanged">
+                                <i:InvokeCommandAction Command="{Binding PasswordChangedCommand}" CommandParameter="{Binding ElementName=pbxMatKhau}"/>
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                    </PasswordBox>
+                </StackPanel>
+            </materialDesign:Card>
+            <Button materialDesign:ShadowAssist.ShadowDepth="Depth2" Grid.Row="3" BorderBrush="{x:Null}" Height="50" Background="#3F3E82" IsDefault="True" VerticalAlignment="Top" HorizontalAlignment="Center" 
+                Command="{Binding DangNhapCommand}" CommandParameter="{Binding ElementName=dangNhap}" Width="297.6" FontSize="16">
+                Đăng nhập
+            </Button>
+        </Grid>
+    </Grid>
+</Window>
